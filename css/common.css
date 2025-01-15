@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+
+/* FONT */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+body { font-family:pretendard; font-size:16px; letter-spacing:-0.02em; line-height:1.4em; font-weight:400; color:#333; }
+
+
+/* RESET */
+* { padding:0; margin:0; box-sizing:border-box; }
+ul { list-style:none; }
+a { text-decoration:none; color:#333; }
+
+/* COMMON */
+
+
+/* HEADER */
+header { 
+    position:fixed; left:0; top:0; width:100%; 
+    background: #ffffff; border-bottom:1px solid #eee; z-index:9; 
+}
+.inner { 
+    display:flex; justify-content:center; position:relative; 
+    width:1400px; margin:0 auto; 
+}
+.inner .cross { 
+    position:absolute; left:70px; top:50%; transform:translateY(-50%); width:50px; height:50px;
+    background:#ffffff url(../img/cross01.png) no-repeat center center; border-radius:50%; cursor:pointer; display:none;
+}
+nav .gnb { display:flex; justify-content:center; }
+nav .gnb>li { padding:20px 20px; }
+nav .gnb>li:first-child a{ color:rgb(0, 157, 255) }
+nav .gnb>li:nth-child(2) a{ color:rgb(255, 208, 0) }
+nav .gnb>li:nth-child(3) a{ color:rgb(229, 97, 255) }
+nav .gnb>li:nth-child(4) a{ color:rgb(255, 163, 186) }
+nav .gnb>li:nth-child(5) a{ color:rgb(85, 199, 70) }
+nav .gnb>li:nth-child(6) a{ color:rgb(255, 179, 132) }
+nav .gnb>li a{ font-weight:300; color:#fff; }
+
+/* SECTION */
+.section-wrap{margin:60px 0 100px 0; position:relative;}
+.section{padding:20px 0 0 0;}
+section .section-inner {max-width:1440px; margin:0 auto; }
+
+.line {
+    display:flex; justify-content:center; flex-wrap:wrap; width:100%; gap:10px; 
+}
+.line li{ 
+    display:flex;flex-direction:column;width:150px;height:200px;
+    box-shadow:0 0 10px 0 rgba(126, 126, 126, 0.2);border:1px solid #ddd;border-radius:10px;
+    cursor:pointer;
+}
+.line li:hover{box-shadow:0 0 5px 2px rgba(0, 0, 0, 0.1)inset;}
+
+.line li:first-child { font-size:1em;font-weight:500;text-align:center;line-height:200px;cursor:auto; }
+.html .line li:first-child {box-shadow:0 0 80px 3px rgba(98, 190, 248,.8)inset; }
+.css .line li:first-child {box-shadow:0 0 80px 3px rgba(236, 208, 82,.8)inset; }
+.jsp .line li:first-child {box-shadow:0 0 80px 3px rgba(231, 112, 255,.8)inset; }
+.jqy .line li:first-child {box-shadow:0 0 80px 3px rgba(255, 149, 165,.8)inset; }
+.clone .line li:first-child {box-shadow:0 0 80px 3px rgba(105, 226, 121,.8)inset; }
+.project .line li:first-child {box-shadow:0 0 80px 3px rgba(255, 172, 117,.8)inset; }
+
+.line li>div{height:50%;}
+.line li .card-img{border-radius:10px 10px 0 0;}
+.line li>.card-title{padding:10px;}
+.line li>.card-title>span{font-size:.8em;font-weight:500;}
+/* card-img/title ///////////////////////////////////////////////////////////////////////////////////////////////////////////////   card-img   ////////////////*/
+.html .line>li:nth-child(2) .card-img{background:url('../img/html02.png')no-repeat center center;}
+.html .line>li:nth-child(2)+.board-wrap .board-img1{background:url('../img/html02.png')no-repeat center center;}
+
+
+.line>li+.board-wrap { 
+    position:fixed; left:0; top:60px; width:100%; height:100vh; 
+    background:#eef; border-radius:0 0 30px 30px; display:none; 
+}
+.line>li+.board-wrap .board { 
+    width:1440px; margin:0 auto; padding: 5%; font-size:1em;
+}
+
+/* FOOTER */
+footer { position:fixed; left:0; bottom:0; width:100%; background:#113355; padding:10px 0 0 0;}
+footer .ft-wrap{display:flex; flex-direction:column; justify-content:space-between; height: 50px;}
+footer .ft-wrap p{color:#fff; font-size:12px; line-height:1.5em; text-align:center; }
