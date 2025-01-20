@@ -21,7 +21,7 @@ ul li:nth-child(3) {
 #btn1:hover{
     background:#999; box-shadow:0 0 0 3px rgba(255,255,255,.3) inset; }
 .txt {
-    display:flex; gap: 20px; text-align:left; padding:0 15px; margin:100px 0 0 0;}
+    display:flex; gap:20px; text-align:left; padding:0 15px; margin:100px 0 0 0;}
 .txt p{
     width:50%; padding:20px 0 20px 10px;
     font-size:14px; font-weight:600;
