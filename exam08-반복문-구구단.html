@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반복문</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <script>
+
+        document.write('<table>')
+
+        document.write('<tr>')
+        for (var i = 2; i <= 9; i++) {
+            document.write('<td>' + i + '단</td>');
+        }
+        document.write('</tr>')
+
+        for (var i = 1; i <= 9; i++) {
+            document.write('<tr>')
+            for (var k = 2; k <= 9; k++) {
+                document.write('<td><span>'+k +'X' +i+'=' + (k*i) + '</span></td>');
+            }
+            document.write('</tr>')
+        }
+
+        document.write('</table>')
+    </script>
+    <style>
+        table{
+            width: 500px; margin:50px auto; 
+            text-align:center; border-collapse:0 ;border-spacing:0;
+        }
+        td{border: 1px solid blue;padding:5px 10px;}
+    </style>
+</head>
+
+<body>
+
+</body>
+
+</html>
