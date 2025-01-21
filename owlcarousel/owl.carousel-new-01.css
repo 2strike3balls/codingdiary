@@ -1,0 +1,6 @@
+@charset "utf-8";
+
+@media screen and (min-width:1550px){
+    .item-wrap{width:1490px; margin:50px auto;background:#eee; overflow:hidden;}
+    .item{width:350px;height:430px; background:#f80;}
+}
