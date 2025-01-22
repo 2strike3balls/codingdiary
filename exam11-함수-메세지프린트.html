@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수</title>
+    <link rel="stylesheet" href="css/reset.css">
+</head>
+<body>
+    <ul>
+        <li><input type="text" id="msg" placeholder="메시지 입력"></li>
+        <li><button type="button" onclick="print()">전송</button></li>
+    </ul>
+    <p id="result"></p>
+    <script>
+        function printMsg(msg){
+            document.getElementById('result').innerText = msg;
+        }
+
+        var print = function(){
+            var msg = document.getElementById('msg').value;
+            printMsg(msg);
+        }
+    </script>
+</body>
+</html>
