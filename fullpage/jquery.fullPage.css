@@ -54,10 +54,18 @@ html.fp-enabled,
     -webkit-user-select: none; /* webkit (safari, chrome) browsers */
     -moz-user-select: none; /* mozilla browsers */
     -khtml-user-select: none; /* webkit (konqueror) browsers */
-    position: absolute; top: 50%;
-    width: 0; height: 0;
-    cursor: pointer; z-index: 4;
-    transform:translate(0, -50%);
+    -ms-user-select: none; /* IE10+ */
+    position: absolute;
+    z-index: 4;
+    top: 50%;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    border-style:none;
+    margin-top: -38px;
+    -webkit-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
 }
 .fp-controlArrow.fp-prev {
     left: 15px;
@@ -67,7 +75,7 @@ html.fp-enabled,
 }
 .fp-controlArrow.fp-next {
     right: 15px;
-    /* border-width: 38.5px 0 38.5px 34px;
+   /*  border-width: 38.5px 0 38.5px 34px;
     border-color: transparent transparent transparent #fff; */
 }
 .fp-scrollable {
