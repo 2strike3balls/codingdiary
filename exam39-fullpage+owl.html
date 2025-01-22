@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fullpage and owl</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="fullpage/jquery.fullPage.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="fullpage/examples.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.css">
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.css">
+    <link rel="stylesheet" href="owlcarousel/owl.carousel-new.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="fullpage/jquery.fullPage.js"></script>
+    <script src="owlcarousel/owl.carousel.js"></script>
+    <script src="owlcarousel/owl.carousel2.js"></script>
+    <script>
+        $(function(){
+            $('#fullpage').fullpage({
+                sectionsColor:['#fff','#4bbfc3','#7baabe','#cdf','#d72'],
+                anchors:['firstPage','secondPage','3rdPage','4thPage','lastPage'],
+            });
+        });
+    </script>
+</head>
+<body>
+    <nav>
+        <ul id="menu">
+            <li data-menuanchor="firstPage"><a href="#firstPage" title="first">first</a></li>
+            <li data-menuanchor="secondPage"><a href="#secondPage" title="second">second</a></li>
+            <li data-menuanchor="3rdPage"><a href="#3rdPage" title="third">third</a></li>
+            <li data-menuanchor="4thPage"><a href="#4thPage" title="forth">forth</a></li>
+            <li data-menuanchor="lastPage"><a href="#lastPage" title="fifth">fifth</a></li>
+        </ul>
+    </nav>
+
+    <div id="fullpage">
+
+        <div class="section" id="section0">
+            <div class="container">
+                <div class="item-wrap">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="itemBg itemBg-01"></div>
+                            <div class="info">
+                                <h3>OWL</h3>
+                                <p>야행성이라는 점 때문에 저녁형 인간을 의미하는 비유적 의미로도 많이 쓰인다...</p>
+                                <a href="#">자세히보기</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="itemBg itemBg-02"></div>
+                            <div class="info">
+                                <h3>WOODPECKER</h3>
+                                <p>딱따구리는 단단한 부리로 나무를 쪼아 벌레를 잡아먹거나 둥지를 만드는 새입니다. 딱따구리의 종류에는...</p>
+                                <a href="#">자세히보기</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="itemBg itemBg-03"></div>
+                            <div class="info">
+                                <h3>EAGLE</h3>
+                                <p>동물 수릿과의 새. 편 날개의 길이는 70~90cm, 꽁지의 길이는 35~40cm이며 어두운 갈색으로 부리와 발톱이...</p>
+                                <a href="#">자세히보기</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="itemBg itemBg-04"></div>
+                            <div class="info">
+                                <h3>DOGBIRD</h3>
+                                <p>영어로는 dog bird라고 한다. 개 같은 새나, 새 같은 개. 혹은 둘을 합성한 키메라 'Dirds'(...)를 가리키는...</p>
+                                <a href="#">자세히보기</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="itemBg itemBg-01"></div>
+                            <div class="info">
+                                <h3>OWL</h3>
+                                <p>야행성이라는 점 때문에 저녁형 인간을 의미하는 비유적 의미로도 많이 쓰인다...</p>
+                                <a href="#">자세히보기</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="itemBg itemBg-02"></div>
+                            <div class="info">
+                                <h3>WOODPECKER</h3>
+                                <p>딱따구리는 단단한 부리로 나무를 쪼아 벌레를 잡아먹거나 둥지를 만드는 새입니다. 딱따구리의 종류에는...</p>
+                                <a href="#">자세히보기</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="itemBg itemBg-03"></div>
+                            <div class="info">
+                                <h3>EAGLE</h3>
+                                <p>동물 수릿과의 새. 편 날개의 길이는 70~90cm, 꽁지의 길이는 35~40cm이며 어두운 갈색으로 부리와 발톱이...</p>
+                                <a href="#">자세히보기</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="itemBg itemBg-04"></div>
+                            <div class="info">
+                                <h3>DOGBIRD</h3>
+                                <p>영어로는 dog bird라고 한다. 개 같은 새나, 새 같은 개. 혹은 둘을 합성한 키메라 'Dirds'(...)를 가리키는...</p>
+                                <a href="#">자세히보기</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section" id="section1"></div>
+        
+        <div class="section" id="section2">
+            <div class="slide">
+                <h2>slide1</h2>
+            </div>
+            <div class="slide">
+                <h2>slide2</h2>
+            </div>
+            <div class="slide">
+                <h2>slide3</h2>
+            </div>
+        </div>
+        
+        <div class="section" id="section3"></div>
+        
+        <div class="section" id="section4"></div>
+
+    </div>
+</body>
+</html>
