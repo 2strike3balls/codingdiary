@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vegas</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="vegas/vegas.css">
+    <link rel="stylesheet" href="vegas/vegas2.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="vegas/vegas.js"></script>
+    <script>
+        $(function(){
+            $('.container').vegas({
+                slides: [
+                    {
+                        src:'imgs/bg3.jpg',
+                        video:{src:'media/dew.mp4',loop:true, mute:true}
+                    },
+                    {
+                        src:'imgs/bg4.jpg',
+                        video:{src:'media/video.mp4',loop:true, mute:true}
+                    },
+                    {
+                        src:'imgs/bg5.jpg',
+                        video:{src:'media/meeting.mp4',loop:true, mute:true}
+                    }
+                ],
+                delay:4000
+            });
+            $('.container2').vegas({
+                slides: [
+                    {
+                        src:'imgs/bg3.jpg',
+                        video:{src:'media/video.mp4',loop:true, mute:true}
+                    },
+                    {
+                        src:'imgs/bg4.jpg',
+                        video:{src:'media/meeting.mp4',loop:true, mute:true}
+                    },
+                    {
+                        src:'imgs/bg5.jpg',
+                        video:{src:'media/dew.mp4',loop:true, mute:true}
+                    }
+                ],
+                delay:4000
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="wrap">
+            <h2>vegas</h2>
+            <p>라스베가스를 떠나며 마이클이 남긴 뭔가 남기긴 한 것 같은데 도대체 그는 어디에 숨겨놓았는지 나는 찾을 수가 없어... </p>
+        </div>
+    </div>
+    <div class="container2"></div>
+</body>
+</html>
