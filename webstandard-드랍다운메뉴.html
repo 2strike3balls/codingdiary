@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>드랍다운메뉴</title>
+    <style>
+        * {margin:0; padding:0; box-sizing:border-box;}
+        ul{list-style:none;}
+        a{display:block;text-decoration:none;color:#333;color:#ff8800;}
+        nav, #main-menu{display:flex;justify-content:center;align-items:center;}
+        nav{position:fixed;left:0;top:0;width:100%;height:50px;background:#333;}
+        #main-menu{height:100%;}
+        #main-menu>li{position:relative;height:100%;}
+        #main-menu>li>a{line-height:45px;padding:0 15px;}
+        .sub-menu{position:absolute;left:0;top:50px;padding:10px 0;width:135px;text-align:center;border-radius:0 0 10px 10px;display:none;}
+        .sub-menu a{padding:0 0 10px 0;}
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <nav>
+        <ul id="main-menu">
+            <li>
+                <a href="#">main-menu01</a>
+                <ul class="sub-menu">
+                    <li><a href="#">sub-menu01</a></li>
+                    <li><a href="#">sub-menu02</a></li>
+                    <li><a href="#">sub-menu03</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">main-menu02</a>
+                <ul class="sub-menu">
+                    <li><a href="#">sub-menu01</a></li>
+                    <li><a href="#">sub-menu02</a></li>
+                    <li><a href="#">sub-menu03</a></li>
+                </ul>
+            </li>
+            <li><a href="#">main-menu03</a></li>
+            <li><a href="#">main-menu04</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
