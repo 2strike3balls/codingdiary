@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .wrap{
+        display:flex;justify-content:space-between;flex-wrap:wrap;
+        width:250px;height:150px;margin:50px auto;
+    }
+    .box{
+        position:relative;
+        width:100px;height:40px;
+        border:1px solid rgb(215, 229, 255); border-radius:10px;
+        text-align:center;line-height:40px;color:#25b;
+        cursor:pointer;overflow:hidden;
+    }
+    
+    .box::before{
+        content:"";position:absolute;;background:rgba(34,85,187,.5);z-index:1;transition:.3s ease;
+    }
+    .box1::before{
+        width:100%;height:0;left:0;top:0;
+        border-radius:0 0 100px 100px;
+    }
+    .box1:hover::before{height:80px;}
+    .box2::before{
+        width:100%;height:0;left:0;bottom:0;
+        border-radius:100px 100px 0 0;
+    }
+    .box2:hover::before{height:80px}
+    .box3::before{
+        width:0;height:100%;left:0;top:0;
+        border-radius:0 100px 100px 0;
+    }
+    .box3:hover::before{width:180px}
+    .box4::before{
+        width:0;height:100%;right:0;top:0;
+        border-radius:100px 0 0 100px;
+    }
+    .box4:hover::before{width:180px}
+    
+</style>
+<body>
+    <div class="wrap">
+        <div class="box box1">hover me</div>
+        <div class="box box2">hover me</div>
+        <div class="box box3">hover me</div>
+        <div class="box box4">hover me</div>
+    </div>
+</body>
+</html>
