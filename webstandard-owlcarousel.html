@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>owl-carousel</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.css">
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="owlcarousel/owl.carousel-new.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.js"></script>
+    <script>
+        $(function(){
+            $('.owl-carousel').owlCarousel({
+            loop: false,
+            margin: 30,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                750: {
+                    items: 2
+                },
+                1150: {
+                    items: 3
+                },
+                1550: {
+                    items: 4
+                }
+                
+            }
+        })
+        });
+    </script>
+</head>
+<body>
+    <div class="item-wrap">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <div class="itemBg itemBg-01"></div>
+                <div class="info">
+                    <h3>OWL</h3>
+                    <p>야행성이라는 점 때문에 저녁형 인간을 의미하는 비유적 의미로도 많이 쓰인다...</p>
+                    <a href="#">자세히보기</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="itemBg itemBg-02"></div>
+                <div class="info">
+                    <h3>WOODPECKER</h3>
+                    <p>딱따구리는 단단한 부리로 나무를 쪼아 벌레를 잡아먹거나 둥지를 만드는 새입니다. 딱따구리의 종류에는...</p>
+                    <a href="#">자세히보기</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="itemBg itemBg-03"></div>
+                <div class="info">
+                    <h3>EAGLE</h3>
+                    <p>동물 수릿과의 새. 편 날개의 길이는 70~90cm, 꽁지의 길이는 35~40cm이며 어두운 갈색으로 부리와 발톱이...</p>
+                    <a href="#">자세히보기</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="itemBg itemBg-04"></div>
+                <div class="info">
+                    <h3>DOGBIRD</h3>
+                    <p>영어로는 dog bird라고 한다. 개 같은 새나, 새 같은 개. 혹은 둘을 합성한 키메라 'Dirds'(...)를 가리키는...</p>
+                    <a href="#">자세히보기</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="itemBg itemBg-01"></div>
+                <div class="info">
+                    <h3>OWL</h3>
+                    <p>야행성이라는 점 때문에 저녁형 인간을 의미하는 비유적 의미로도 많이 쓰인다...</p>
+                    <a href="#">자세히보기</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="itemBg itemBg-02"></div>
+                <div class="info">
+                    <h3>WOODPECKER</h3>
+                    <p>딱따구리는 단단한 부리로 나무를 쪼아 벌레를 잡아먹거나 둥지를 만드는 새입니다. 딱따구리의 종류에는...</p>
+                    <a href="#">자세히보기</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="itemBg itemBg-03"></div>
+                <div class="info">
+                    <h3>EAGLE</h3>
+                    <p>동물 수릿과의 새. 편 날개의 길이는 70~90cm, 꽁지의 길이는 35~40cm이며 어두운 갈색으로 부리와 발톱이...</p>
+                    <a href="#">자세히보기</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="itemBg itemBg-04"></div>
+                <div class="info">
+                    <h3>DOGBIRD</h3>
+                    <p>영어로는 dog bird라고 한다. 개 같은 새나, 새 같은 개. 혹은 둘을 합성한 키메라 'Dirds'(...)를 가리키는...</p>
+                    <a href="#">자세히보기</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
