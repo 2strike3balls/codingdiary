@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css">
+</head>
+<style>
+    .wrap{
+        display:flex;justify-content:space-between;flex-wrap:wrap;
+        width:250px;height:150px;margin:50px auto;
+    }
+    .box{
+        position:relative;
+        width:100px;height:40px;
+        border:1px solid rgb(215, 229, 255); border-radius:10px;
+        
+        cursor:pointer;overflow:hidden;
+    }
+    .box p{
+        display:block; width:100%;
+        padding:0 0 0 0;
+        text-align:center;color:#25b;line-height:37px;
+        opacity:1;
+        transition:1s ease;
+    }
+    .box1:hover p{font-size:1.1em;font-weight:300;}
+    .box::before{
+        content:"";position:absolute;;background:rgba(34,85,187,.5);z-index:1;transition:.3s ease;
+    }
+    .box1::before{
+        width:100%;height:0;left:0;top:0;
+        border-radius:0 0 100px 100px;
+    }
+    .box1:hover::before{height:80px;}
+    .box::after{
+        content:"";position:absolute;;background:rgba(255, 255, 255, 0.5);z-index:1;transition:1s ease;
+    }
+    .box1::after{
+        width:100%;height:0;left:0;bottom:0;
+        border-radius:100% 100% 0 0;
+    }
+    .box1:hover::after{height:10px;}
+
+    .box2:hover p{margin:0 0 0 10%;letter-spacing:-0.03em;}
+    .box2::before{
+        width:100%;height:0;left:0;bottom:0;
+        border-radius:100px 100px 0 0;
+    }
+    .box2:hover::before{height:80px}
+    
+    .box2::after{
+        width:0;height:100%;left:0;top:0;
+        border-radius:0 100% 100% 0;
+    }
+    .box2:hover::after{width:20%;}
+
+    .box3:hover p{opacity:0;font-size:0;text-indent:-9999;visibility:hidden;}
+    .box3::before{
+        content:'';
+        width:0;height:100%;left:0;top:0;
+        border-radius:0 100px 100px 0;
+    }
+    .box3:hover::before{width:180px}
+    .box3::after{
+        
+        color:rgba(58, 80, 192, 0);text-align:center;
+        width:100%; height:100%; left:0; top:0; padding:6px 0 0 0;
+        background:rgba(255,255,255,0);
+        transition:1s ease; transition-delay:.7s;
+    }
+    .box3:hover::after{
+        content:'click me';
+        padding:6px 0 0 0;
+        font-size:1em;color:rgba(58, 80, 192, .8);
+        background:rgba(255,255,255,.3);}
+        
+
+    .box4::before{
+        width:0;height:100%;right:0;top:0;
+        border-radius:100px 0 0 100px;
+    }
+    .box4:hover::before{width:180px}
+    
+</style>
+<body>
+    <div class="wrap">
+        <div class="box box1"><p>hover me</p></div>
+        <div class="box box2"><p>hover me</p></div>
+        <div class="box box3"><p>hover me</p></div>
+        <div class="box box4"><p>hover me</p></div>
+    </div>
+</body>
+</html>
