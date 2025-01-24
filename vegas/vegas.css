@@ -32,7 +32,7 @@
                 transition: width ease-out;
     }
         .vegas-timer-running .vegas-timer-progress {
-            width: 100%;
+            width: 0;
         }
 
 .vegas-slide,
