@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>브라우저내장객체</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <script>
+        function popup(){
+            window.open('http://www.daum.net', 'daum', 'width=500, height=500, scrollbars=no' )
+        };
+        function trans(){
+            location.href ='http://www.naver.com'; 
+        };
+
+/*////////// 유효성검증 : 서버의 과부하를 방지하기위함 //////////////////////////////////////////////////////////////////  */
+/*///////// 문자열에 '문자'가 있는지 여부 확인, 변수(=문자열).indexOf('문자')  /////////////*/
+
+        function confirm(){
+            var email = document.getElementById('email').value;
+            var check1 = false;
+            if(email.indexOf('@')>0)check1 = true; /* indexOf('문자') 메소드 : 문자의 인덱스번호를 반환, 만약 문자가 없으면 -1반환 */
+            
+            var array = ['.co.kr','.com','.net','.or.kr','.go.kr','.org']
+            var check2 = false;
+            for (var i=0; i<array.length; i++) {     /* indexOf('문자') 메소드 : 문자의 인덱스번호를 반환, 만약 문자가 없으면 -1반환 */
+                if(email.indexOf(array[i])>0) check2=true;
+            }
+
+            if(check1&&check2){
+                document.getElementById('result').innerText = '이메일 형식이 정상입니다.';
+            }else{
+                document.getElementById('result').innerText = '이메일 형식이 유효하지 않습니다.';
+            }
+
+        };
+    </script>
+</head>
+<body>
+    <button type="button" onclick="popup()">팝업</button>
+    <button type="button" onclick="trans()">트랜스</button>
+    <p></p>
+    <ul>
+        <li><input type="email" id="email"></li>
+        <button type="button" onclick="confirm()">유효성검증</button>
+    </ul>
+    <p id="result"></p>
+</body>
+</html>-1반환+
