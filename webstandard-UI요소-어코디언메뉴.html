@@ -6,7 +6,7 @@
     <title>어코디언메뉴</title>
     <link rel="stylesheet" href="../css/reset.css">
     <style>
-        .wrap{width:400px;margin:0 auto;}
+        .wrap{width:800px;margin:0 auto;}
         .wrap input{display:none;}
         .wrap label{
             position:relative;
@@ -23,6 +23,9 @@
             position:absolute;right:20px;top:50%;transform:translateY(-45%);
             width:24px;height:24px;
         }
+        input:checked + label::after{
+            background:url('./images/arrow_up.png') no-repeat center center;
+        }
         .ac-content{
             position:relative;
             background:url('./images/bgnoise_lg.jpg');
@@ -32,12 +35,15 @@
         .ac-content p{padding:40px;}
         .ac-1{height:0;}
         .ac-2{height:0;}
+        .ac-3{height:0;}
+        .ac-4{height:0;}
+        
+        .ac-content p{}
 
-        input:checked + label::after{
-            background:url('./images/arrow_up.png') no-repeat center center;
-        }
         input:checked ~ .ac-1{height:200px;}
         input:checked ~ .ac-2{height:200px;}
+        input:checked ~ .ac-3{height:200px;}
+        input:checked ~ .ac-4{height:200px;}
 
     </style>
 </head>
@@ -55,6 +61,24 @@
         <input type="checkbox" id="ac-2">
         <label for="ac-2">products</label>
         <div class="ac-content ac-2">
+            <p>
+                Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins...
+            </p>
+        </div>
+    </div>
+    <div class="wrap">
+        <input type="checkbox" id="ac-3">
+        <label for="ac-3">what to do</label>
+        <div class="ac-content ac-3">
+            <p>
+                Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins...
+            </p>
+        </div>
+    </div>
+    <div class="wrap">
+        <input type="checkbox" id="ac-4">
+        <label for="ac-4">where to buy</label>
+        <div class="ac-content ac-4">
             <p>
                 Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins...
             </p>
