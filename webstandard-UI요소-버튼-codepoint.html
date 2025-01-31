@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<style>
+    /* sns button ///////////////////////////////////////////////////////////////////////////////////////////////////////*/
+    
+    .wrap2{
+        display:flex;justify-content:space-between;align-items:center;
+        position:absolute;left:50%;top:50%;transform:translate(-50%, -50%);width:330px;height:90px;
+    }
+    .bbox{
+        position:relative;
+        width:90px;height:90px;
+        text-align:center;line-height:88px;
+        border-radius:20px;box-shadow:0 5px 20px 0 #aaa;
+        background:linear-gradient(to bottom, #f0f0f0, #aaccff);
+        overflow:hidden;
+    }
+    .bbox i.bi{color:#25b;font-size:32px;transition:.3s ease .2s}
+    .bbox:hover i.bi{color:#fff;font-size:36px;}
+
+    /* bbox1 ///////////////////////////////////////////////////////////////////////////////////////// */
+    .bbox1::before{
+        content:"";
+        width:130px;height:100px;transform:skewX(20deg);
+        position:absolute;left:-160%;top:0;
+        background:rgba(20,50,158,1);
+        transition:.3s ease;
+    }
+    @keyframes btnAni{
+        0%{left:-160%;top:0;}
+        70%{left:10%;top:0;} 
+        100%{left:-10%;top:0;}
+    }
+    .bbox1:hover::before{
+        left:-10%;top:0;
+        animation:btnAni .5s 1 ease-in;}
+
+    .bbox1::after{
+        position:absolute;left:50%;top:50%;transform:translate(-50%, -50%);
+        font-family: "bootstrap-icons";
+        content:"\F344";
+        font-size:32px;
+        color:#259;
+        text-align:center;
+        transition:.4s ease-in-out;
+    }
+    .bbox1:hover::after{font-size:36px;color:#abf;}
+
+    /* bbox2 ///////////////////////////////////////////////////////////////////////////////////////// */
+    
+    .bbox2::before{
+        content:"";
+        width:130px;height:100px;transform:skewX(20deg);
+        position:absolute;left:-160%;top:0;
+        background:rgba(20,50,158,1);
+        transition:.3s ease;
+    }
+    @keyframes btnAni{
+        0%{left:-160%;top:0;}
+        70%{left:10%;top:0;} 
+        100%{left:-10%;top:0;}
+    }
+    .bbox2:hover::before{
+        left:-10%;top:0;
+        animation:btnAni .5s 1 ease-in;}
+
+    .bbox2::after{
+        position:absolute;left:50%;top:50%;transform:translate(-50%, -50%);
+        font-family: "bootstrap-icons";
+        content:"\F5EF";
+        font-size:32px;
+        color:#259;
+        text-align:center;
+        transition:.4s ease-in-out;
+    }
+    .bbox2:hover::after{font-size:36px;color:#abf;}
+
+ /* bbox3 ///////////////////////////////////////////////////////////////////////////////////////// */
+    
+    .bbox3::before{
+        content:"";
+        width:130px;height:100px;transform:skewX(20deg);
+        position:absolute;left:-160%;top:0;
+        background:rgba(20,50,158,1);
+        transition:.3s ease;
+    }
+    @keyframes btnAni{
+        0%{left:-160%;top:0;}
+        70%{left:10%;top:0;} 
+        100%{left:-10%;top:0;}
+    }
+    .bbox3:hover::before{
+        left:-10%;top:0;
+        animation:btnAni .5s 1 ease-in;}
+
+    .bbox3::after{
+        position:absolute;left:50%;top:50%;transform:translate(-50%, -50%);
+        font-family: "bootstrap-icons";
+        content:"\F437";
+        font-size:32px;
+        color:#259;
+        text-align:center;
+        transition:.4s ease-in-out;
+    }
+    .bbox3:hover::after{font-size:36px;color:#abf;}
+</style>
+<body> 
+    <div class="wrap2">
+        <div class="bbox bbox1"></div>
+        <div class="bbox bbox2"></div>
+        <div class="bbox bbox3"></div>
+    </div>
+</body>
+</html>
