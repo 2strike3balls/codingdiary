@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Dropdown Menu</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="shortcut icon" href="../../02. 반응형웹구현/01.swimming/imgs/favicon.ico">
+    <style>
+        .wrap{}
+
+        /* MENU DEPTH 1 /////////////////////////////////////////////////////////// */
+
+        #main-menu{
+            position:absolute;left:50%;top:50px;transform:translateX(-50%);
+            width:90%;height:40px;padding:0 3%;
+            background:linear-gradient(to bottom, #400040, #250025 70%);
+            border-radius:10px; z-index:9;
+            display:flex;justify-content:space-between;
+        }
+        #main-menu>li>a{
+            padding:0 15px;line-height:40px;
+            color:#fff;font-weight:400;text-transform:capitalize;text-shadow:1px 1px 1px 0 #000;
+        }
+        #main-menu>li a:hover{color:#2be900;}
+        
+        /* MENU DEPTH 2 /////////////////////////////////////////////////////////// */
+        
+        #main-menu>li{position:relative;}
+        .sub-menu{
+            position:absolute;left:0;top:40px;
+            background:#250025; border-radius:0 0 10px 10px;
+            transition:.3s ease;
+        }
+        
+        .sub-menu>li>a{
+            padding:0 20px 0 40px; line-height:2em;
+            font-size:15px;color:#f6f6f6;
+            opacity:1;
+            transition:.3s ease-in-out;
+        }
+        
+        /* 드랍다운 첫번째 방법 */
+        /* .sub-menu li{height:0; overflow:hidden; transition:.3s ease;}
+        #main-menu>li:hover>.sub-menu{padding:10px 0;}
+        #main-menu>li:hover>.sub-menu li{height:2em;} */
+        
+        /* 드랍다운 두번째 방법 */
+        .sub-menu>li>a{font-size:0;}
+        #main-menu>li:hover .sub-menu>li>a{font-size:.8em;}
+        
+        /* 드랍다운 세번째 방법 */
+        .sub-menu>li>a{line-height:0em;overflow:hidden;}
+        #main-menu>li:hover .sub-menu>li>a{line-height:2em;}
+        
+        
+        .sub-menu a.doc{background:url('images/docs.png')no-repeat 5px center;}
+        .sub-menu a.msg{background:url('images/bubble.png')no-repeat 5px center;}
+        .sub-menu a.so{background:url('images/arrow.png')no-repeat 5px center;}
+
+
+
+        .box{height:100vh;background:darkblue;}
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="container">
+            <ul id="main-menu">
+                <li>
+                    <a href="#">dashboard</a>
+                </li>
+                <li>
+                    <a href="#">likes</a>
+                    <ul class="sub-menu">
+                        <li><a href="#" class="doc">documents</a></li>
+                        <li><a href="#" class="msg">messages</a></li>
+                        <li><a href="#" class="so">sign out</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">views</a>
+                    <ul class="sub-menu">
+                        <li><a href="#" class="doc">documents</a></li>
+                        <li><a href="#" class="msg">messages</a></li>
+                        <li><a href="#" class="so">sign out</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">uploads</a>
+                    <ul class="sub-menu">
+                        <li><a href="#" class="doc">documents</a></li>
+                        <li><a href="#" class="msg">messages</a></li>
+                        <li><a href="#" class="so">sign out</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">videos</a>
+                    <ul class="sub-menu">
+                        <li><a href="#" class="doc">documents</a></li>
+                        <li><a href="#" class="msg">messages</a></li>
+                        <li><a href="#" class="so">sign out</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">documents</a>
+                    <ul class="sub-menu">
+                        <li><a href="#" class="doc">documents</a></li>
+                        <li><a href="#" class="msg">messages</a></li>
+                        <li><a href="#" class="so">sign out</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="box"></div>
+        </div>
+    </div>
+</body>
+</html>
