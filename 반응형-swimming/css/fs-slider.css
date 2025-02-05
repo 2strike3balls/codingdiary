@@ -2,34 +2,11 @@
 
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
-
-@media screen and (min-width:1050px){
-    section{ width:1000px;height:490px;margin:0 auto;}
-}
-
-@media screen and (min-width:700px) and (max-width:1049px){
-    section{ width:100%;height:490px;margin:50px auto;}
-    body{background:none;}
-}
-
-@media screen and (max-width:699px){
-
-}
-
-
-
-
-
-
-
-
-
-/* .slides > li {position:relative;}
+.slides > li {position:relative;}
 
 .fs-itemBg1{background:url('../imgs/slide1.png') no-repeat center center;background-size:cover;}
 .fs-itemBg2{background:url('../imgs/slide2.png') no-repeat center center;background-size:cover;}
 .fs-itemBg3{background:url('../imgs/slide3.png') no-repeat center center;background-size:cover;}
-
 i.bi{font-size:38px; color:rgba(11, 0, 92,.7);}
 
 .fs-btn{
@@ -40,15 +17,14 @@ i.bi{font-size:38px; color:rgba(11, 0, 92,.7);}
 }
 .fs-btn:hover{color:#fff; border:0; background:rgba(54, 104, 178, 0.7);box-shadow:0 0 0 3px rgba(255,255,255,.1)inset;}
 
-@media screen and (min-width:1050px){
-    section{width:1000px;margin:0 auto;}
-    .fs-itemBg{height:490px;}
+@media screen and (min-width:1050px) {
+    .fs-itemBg{height:450px;}
 }
 
 @media screen and (min-width:700px) and (max-width:1049px){
-    .fs-itemBg{height:490px;}
+    .fs-itemBg{height:600px;}
 }
 
-@media screen and (min-width:380px) and (max-width:699px){
+@media screen and (max-width:699px){
     .fs-itemBg{height:100vh;}
-} */
+}

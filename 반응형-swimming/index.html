@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>반응형01-swimming</title>
     <link rel="shortcut icon" href="imgs/favicon.ico">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="./css/fs-slider.css">
+    <link rel="stylesheet" href="./css/flexslider.css">
+    <script src="https://kit.fontawesome.com/11390cb447.js" crossorigin="anonymous"></script>
     <script src="js/jquery-1.12.4.js"></script>
     <script src="js/navigation.js"></script>
+    <script src="./js/jquery.flexslider.js"></script>
 </head>
 <body>
     <header>
@@ -25,40 +29,86 @@
 
     <nav>
         <a href="index.html" class="mb mb-logo">swimming</a>
-        <a href="#" id="trigger" class="mb">
-            <span></span>
-            <span></span>
-            <span></span>
-        </a>
 
         <ul id="main-menu">
             <li>
                 <a href="#">스위밍소개</a>
                 <ul class="sub-menu">
                     <li><a href="#">스위밍 역사</a></li>
-                    <li><a href="#">스위밍 지점</a></li>
+                    <li><a href="#">지점소개</a></li>
                 </ul>
             </li>
             <li>
                 <a href="#">수영놀이터</a>
+                <ul class="sub-menu">
+                    <li><a href="#">슬라이드</a></li>
+                    <li><a href="#">노천풀</a></li>
+                    <li><a href="#">풀빌라</a></li>
+                    <li><a href="#">워터밤</a></li>
+                </ul>
             </li>
             <li>
                 <a href="#">자유형</a>
+                <ul class="sub-menu">
+                    <li><a href="#">슬라이드</a></li>
+                    <li><a href="#">노천풀</a></li>
+                    <li><a href="#">풀빌라</a></li>
+                    <li><a href="#">워터밤</a></li>
+                </ul>
             </li>
             <li>
                 <a href="#">평영</a>
+                <ul class="sub-menu">
+                    <li><a href="#">슬라이드</a></li>
+                    <li><a href="#">노천풀</a></li>
+                    <li><a href="#">풀빌라</a></li>
+                    <li><a href="#">워터밤</a></li>
+                </ul>
             </li>
             <li>
                 <a href="#">접영</a>
+                <ul class="sub-menu">
+                    <li><a href="#">슬라이드</a></li>
+                    <li><a href="#">노천풀</a></li>
+                    <li><a href="#">풀빌라</a></li>
+                    <li><a href="#">워터밤</a></li>
+                </ul>
             </li>
             <li>
                 <a href="#">배영</a>
+                <ul class="sub-menu">
+                    <li><a href="#">슬라이드</a></li>
+                    <li><a href="#">노천풀</a></li>
+                    <li><a href="#">풀빌라</a></li>
+                    <li><a href="#">워터밤</a></li>
+                </ul>
             </li>
         </ul>
+        <a href="#" id="trigger" class="mb">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
         <ul class="mb mb-top-menu">
-            <li><a href="#">로그인</a></li>
-            <li><a href="#">회원가입</a></li>
+            <li><a href="#" title="로그인"><i class="fa-solid fa-circle-user"></i></a></li>
+            <li><a href="#" title="회원가입"><i class="fa-solid fa-user-check"></i></a></li>
         </ul>
     </nav>
+    
+    <section>
+        <div class="flexslider">
+            <ul class="slides">
+                <li>
+                    <div class="fs-itemBg fs-itemBg1"></div>
+                </li>
+                <li>
+                    <div class="fs-itemBg fs-itemBg2"></div>
+                </li>
+                <li>
+                    <div class="fs-itemBg fs-itemBg3"></div>
+                </li>
+            </ul>
+        </div>
+    </section>
 </body>
 </html>

@@ -20,8 +20,9 @@ body {
     font-family: "Nanum Gothic", serif; 
     font-size:16px; color:#333; 
     font-weight:300;
-    line-height:1em;
+    line-height:1.3em;
     background:#fff url('../imgs/bd-bg.jpg')repeat-y center top;
+    overflow:hidden;
 }
 
 /* RESET ///////////////////////////////////////////////////////////////////////////// */
