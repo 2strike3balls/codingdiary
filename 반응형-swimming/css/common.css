@@ -4,8 +4,8 @@
 @import url('https://db.onlinewebfonts.com/c/eba6ff471b149c188c89337749e3dc23?family=VAG+Rounded+BT');
 /* font-family: "VAG Rounded BT"; */
 
-/* 미디어쿼리 HD //////////////////////////////////////////////////////////////////////////// */
-@media screen and (min-width:1050px){
+/* 미디어쿼리 /////////////////////////////////////////////////////////////////////////////// */
+@media screen and (min-width:1050px){ /* //////////////////////////////////////// HD ////// */
 
 header{
     display:flex;justify-content:space-between;
@@ -47,7 +47,7 @@ nav{
 
 }
 
-@media screen and (min-width:700px) and (max-width:1049px){
+@media screen and (min-width:700px) and (max-width:1049px){  /* /////////////TABLET  //////*/
     header{
         display:none;
     }
@@ -75,7 +75,6 @@ nav{
 
     .mb-top-menu a{
         font-size:24px;line-height:50px;color:#555;
-        
     }
 
 /* TRIGGER /////////////////////////////////////////////////// */
@@ -83,24 +82,28 @@ nav{
         position:fixed;right:30px;top:14px;
         width:32px;height:24px;
         z-index:1; overflow:hidden;
-        background:#ddd;
     }
     #trigger span{
         position:absolute;left:0;
         width:100%;height:2px;
         background:#666;
-        transition:.3s ease;
+        transition:.2s ease;
     }
     #trigger span:nth-child(1){top:0;}
     #trigger span:nth-child(2){top:11px;}
-    #trigger span:nth-child(3){bottom:0;}
+    #trigger span:nth-child(3){top:22px;}
 
     /* toggleClass active /////////////////////////// */
+    #main-menu{display:block;}
     #main-menu.active ~ #trigger>span:nth-child(1){
-        transform-origin:0% 0%;transform:rotate(45deg);}
-    #main-menu.active ~ #trigger>span:nth-child(2){opacity:0;}
+        top:11px;
+        transform-origin:50% 50%;transform:rotate(765deg);}
+    #main-menu.active ~ #trigger>span:nth-child(2){
+        opacity:0;
+        transform-origin:50% 50%;transform:rotate(720deg);}
     #main-menu.active ~ #trigger>span:nth-child(3){
-        transform-origin:0% 0%; transform:rotate(-45deg);}
+        top:11px;
+        transform-origin:50% 50%; transform:rotate(-765deg);}
 
 
     /* MAIN-MENU ///////////////////////////////////////////// */
@@ -110,7 +113,6 @@ nav{
         background:rgba(53, 67, 238,.9);z-index:9;
         transition:.5s ease;
     }
-
     
     #main-menu>li{width:max-content;margin:0 auto;}
     #main-menu>li>a{
@@ -125,7 +127,6 @@ nav{
         padding:0 0 10px 0; opacity:0;visibility:hidden;
         z-index:9;
     }
-    
     .sub-menu>li>a{
         padding:10px 20px;
         font-size:14px;color:#f6f6f6;text-align:center;

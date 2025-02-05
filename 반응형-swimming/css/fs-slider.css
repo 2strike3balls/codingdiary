@@ -1,21 +1,12 @@
 @charset "utf-8";
 
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
-
-.slides > li {position:relative;}
+/* .slides > li {position:relative;} */ /* 이미지위 타이포그라피 div위치용 */
 
 .fs-itemBg1{background:url('../imgs/slide1.png') no-repeat center center;background-size:cover;}
 .fs-itemBg2{background:url('../imgs/slide2.png') no-repeat center center;background-size:cover;}
 .fs-itemBg3{background:url('../imgs/slide3.png') no-repeat center center;background-size:cover;}
-i.bi{font-size:38px; color:rgba(11, 0, 92,.7);}
 
-.fs-btn{
-    position:absolute; left:50%; bottom:100px; transform:translateX(-50%);text-align:center;
-    padding:10px 15px; background:rgba(92, 157, 255, 0.5); border-radius:25px; color:#28285a;
-    box-shadow:0 0 0 3px rgba(0,0,0,.1)inset;
-    font-size:14px; font-weight:300;
-}
-.fs-btn:hover{color:#fff; border:0; background:rgba(54, 104, 178, 0.7);box-shadow:0 0 0 3px rgba(255,255,255,.1)inset;}
+/* i.bi{font-size:38px; color:rgba(11, 0, 92,.7);} */ /* 좌우내비 아이콘 부트스트랩 <i> 이용시사용 */
 
 @media screen and (min-width:1050px) {
     .fs-itemBg{height:450px;}

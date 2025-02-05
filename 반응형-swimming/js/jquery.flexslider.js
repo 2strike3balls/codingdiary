@@ -346,7 +346,7 @@ $(function () {
       },
       directionNav: {
         setup: function() {
-          var directionNavScaffold = $('<ul class="' + namespace + 'direction-nav"><li class="' + namespace + 'nav-prev"><a class="' + namespace + 'prev" href="#"><i class="bi bi-arrow-left-circle"></i></a></li><li class="' + namespace + 'nav-next"><a class="' + namespace + 'next" href="#"><i class="bi bi-arrow-right-circle"></i></a></li></ul>');
+          var directionNavScaffold = $('<ul class="' + namespace + 'direction-nav"><li class="' + namespace + 'nav-prev"><a class="' + namespace + 'prev" href="#"></a></li><li class="' + namespace + 'nav-next"><a class="' + namespace + 'next" href="#"></a></li></ul>');
 
           // CUSTOM DIRECTION NAV:
           if (slider.customDirectionNav) {
