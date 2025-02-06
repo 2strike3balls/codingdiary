@@ -5,110 +5,145 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>반응형01-swimming</title>
     <link rel="shortcut icon" href="imgs/favicon.ico">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/common.css">
-    <!-- <link rel="stylesheet" href="./css/fs-slider.css"> -->
     <link rel="stylesheet" href="./css/flexslider.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
     <script src="https://kit.fontawesome.com/11390cb447.js" crossorigin="anonymous"></script>
     <script src="js/jquery-1.12.4.js"></script>
     <script src="js/navigation.js"></script>
     <script src="./js/jquery.flexslider.js"></script>
 </head>
 <body>
-    <header>
-        <a href="index.html" class="logo">
-            <img src="imgs/logo.png" alt="스위밍 로고">
-        </a>
-
-        <ul class="top-menu">
-            <li><a href="#">로그인</a></li>
-            <li><a href="#">회원가입</a></li>
-        </ul>
-    </header>
-
-    <nav>
-        <a href="index.html" class="mb mb-logo">swimming</a>
-
-        <ul id="main-menu">
-            <li>
-                <a href="#">스위밍 소개</a>
-                <ul class="sub-menu">
-                    <li><a href="#">스위밍 역사</a></li>
-                    <li><a href="#">지점소개</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">수영 놀이터</a>
-                <ul class="sub-menu">
-                    <li><a href="#">슬라이드</a></li>
-                    <li><a href="#">노천풀</a></li>
-                    <li><a href="#">풀빌라</a></li>
-                    <li><a href="#">워터밤</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">자유형</a>
-                <ul class="sub-menu">
-                    <li><a href="#">슬라이드</a></li>
-                    <li><a href="#">노천풀</a></li>
-                    <li><a href="#">풀빌라</a></li>
-                    <li><a href="#">워터밤</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">평영</a>
-                <ul class="sub-menu">
-                    <li><a href="#">슬라이드</a></li>
-                    <li><a href="#">노천풀</a></li>
-                    <li><a href="#">풀빌라</a></li>
-                    <li><a href="#">워터밤</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">접영</a>
-                <ul class="sub-menu">
-                    <li><a href="#">슬라이드</a></li>
-                    <li><a href="#">노천풀</a></li>
-                    <li><a href="#">풀빌라</a></li>
-                    <li><a href="#">워터밤</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">배영</a>
-                <ul class="sub-menu">
-                    <li><a href="#">슬라이드</a></li>
-                    <li><a href="#">노천풀</a></li>
-                    <li><a href="#">풀빌라</a></li>
-                    <li><a href="#">워터밤</a></li>
-                </ul>
-            </li>
-        </ul>
-        <a href="#" id="trigger" class="mb">
-            <span></span>
-            <span></span>
-            <span></span>
-        </a>
-        <ul class="mb mb-top-menu">
-            <li><a href="#" title="로그인"><i class="fa-solid fa-circle-user"></i></a></li>
-            <li><a href="#" title="회원가입"><i class="fa-solid fa-user-check"></i></a></li>
-        </ul>
-    </nav>
+    <div class="wrapper">
+        <header>
+            <a href="index.html" class="logo">
+                <img src="imgs/logo.png" alt="스위밍 로고">
+            </a>
     
-    <section>
-        <div class="flexslider">
-            <ul class="slides">
+            <ul class="top-menu">
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+            </ul>
+        </header>
+    
+        <nav>
+            <a href="index.html" class="mb mb-logo">swimming</a>
+    
+            <ul id="main-menu">
                 <li>
-                    <div class="fs-itemBg fs-itemBg1"></div>
+                    <a href="#">스위밍 소개</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">스위밍 역사</a></li>
+                        <li><a href="#">지점소개</a></li>
+                    </ul>
                 </li>
                 <li>
-                    <div class="fs-itemBg fs-itemBg2"></div>
+                    <a href="#">수영 놀이터</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">슬라이드</a></li>
+                        <li><a href="#">노천풀</a></li>
+                        <li><a href="#">풀빌라</a></li>
+                        <li><a href="#">워터밤</a></li>
+                    </ul>
                 </li>
                 <li>
-                    <div class="fs-itemBg fs-itemBg3"></div>
+                    <a href="#">자유형</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">슬라이드</a></li>
+                        <li><a href="#">노천풀</a></li>
+                        <li><a href="#">풀빌라</a></li>
+                        <li><a href="#">워터밤</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">평영</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">슬라이드</a></li>
+                        <li><a href="#">노천풀</a></li>
+                        <li><a href="#">풀빌라</a></li>
+                        <li><a href="#">워터밤</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">접영</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">슬라이드</a></li>
+                        <li><a href="#">노천풀</a></li>
+                        <li><a href="#">풀빌라</a></li>
+                        <li><a href="#">워터밤</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">배영</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">슬라이드</a></li>
+                        <li><a href="#">노천풀</a></li>
+                        <li><a href="#">풀빌라</a></li>
+                        <li><a href="#">워터밤</a></li>
+                    </ul>
                 </li>
             </ul>
-        </div>
-    </section>
+            <a href="#" id="trigger" class="mb">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <ul class="mb mb-top-menu">
+                <li><a href="#" title="로그인"><i class="fa-solid fa-circle-user"></i></a></li>
+                <li><a href="#" title="회원가입"><i class="fa-solid fa-user-check"></i></a></li>
+            </ul>
+        </nav>
+        
+        <section>
+            <div class="flexslider">
+                <ul class="slides">
+                    <li>
+                        <div class="fs-itemBg fs-itemBg1"></div>
+                    </li>
+                    <li>
+                        <div class="fs-itemBg fs-itemBg2"></div>
+                    </li>
+                    <li>
+                        <div class="fs-itemBg fs-itemBg3"></div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    
+        <article>
+            <div class="art-wrap">
+                <h3>전국 수영장 위치</h3>
+                <div class="art-bg1"></div>
+                <p>
+                    전국 수영장 위치를 지역별로 조회할 수 있습니다. 물론 스위밍에서 운영하는 수영장의 위치도 조회할 수 있습니다.
+                </p>
+            </div>
+            <div class="art-box">
+                <h3>스위밍에서 운영하는 수영 놀이터</h3>
+                <div class="art-bg2"></div>
+                <p>
+                    스위밍에서 운영하는 수영 놀이터의 종류와 커리큐럼을 보실수 있습니다. 물론 수영 선생님의 양력도 같이 보실 수 있습니다. 아마... 흥미로움을 느낄 수 있는 자료가 가득할겁니다.
+                </p>
+            </div>
+            <div class="art-wrap">
+                <h3>스위밍 회원의 특권</h3>
+                <div class="art-bg3"></div>
+                <p>
+                    스위밍 회원의 특권을 누리세요. 스위밍 회원이 되시면 많은 해택을 누릴 수 있습니다스위밍 회원으로 가입하시고 특권을 누려요
+                </p>
+            </div>
+        </article>
+    
+        <footer>
+            <p>P.O. Box 4483 | Califonia USA | Tel: +1 2 333 3789 | Fax: +1 2 333 4789 | E-mail: webmaster@swimming.com 
+                Copyright 2012  swimming All Rights Reserved. </p>
+            <ul class="sns">
+                <li><a href="#"><i class="fa-solid fa-square-rss"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-square-twitter"></i></a></li>
+                <li><a href="3"><i class="fa-brands fa-square-facebook"></i></a></li>
+            </ul>
+        </footer>
+    </div>
 </body>
 </html>
