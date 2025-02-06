@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Effect</title>
+    <link rel="stylesheet" href="./css/reset-ui.css">
+    <style>
+        /* ///////////////////////////////////////////////////////////////////////////////////   T E X T   B U T T O N   //////////////////// */
+        .effect1{
+            display:flex;justify-content:center;gap:100px;
+            padding:50px 0;
+            background:#214;
+        }
+        .effect1>a{
+            position:relative;
+            color:#f4f4f4;text-transform:uppercase;
+        }
+        .effect1>a:before{
+            content:'[';
+            position:absolute;left:-5px;top:0;
+            opacity:0; transition:.3s ease;
+        }
+        .effect1>a:after{
+            content:']';
+            position:absolute;right:-5px;top:0;
+            opacity:0; transition:.3s ease;
+        }
+        .effect1>a:hover::before{
+            content:'[';
+            position:absolute;left:-15px;top:0;
+            opacity:1;
+        }
+        .effect1>a:hover::after{
+            content:']';
+            position:absolute;right:-15px;top:0;
+            opacity:1; 
+        }
+
+        /* ///////////////////////////////////////////////////////////////////////////////////   3 D  B O X  B U T T O N   //////////////////// */
+        .effect2{
+            height:400px;padding:100px 0; /* a박스세로정렬 */
+            background:#f80;
+            perspective:500px;
+        }
+
+        /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////    < a >    //////////////////// */
+        .effect2 a{
+            width:200px;height:200px;margin:0 auto;/* 박스 중앙정렬 */
+            position:relative;
+
+            transform-style: preserve-3d;
+            transform-origin:50% 50%; /* a판 회전축 */
+            transform: rotateX(0deg) rotateY(45deg) translate3d(0px, 0px, 0px);
+            transition:1s ease;
+            background:blue; /* 회전축 표시 */
+        }
+        .effect2>a:hover{
+            transform: rotateX(360deg) /* rotateY(90deg) */ translate3d(0px, 0px, 0px);
+        }
+        /* ////////////////////////////////////////////////////////////////////////////////////////////////////    <  s p a n  >    //////////////////// */
+        .effect2>a span{
+            width:100%;height:100%;
+            position:absolute;left:0;top:0;
+            /* border:1px solid rgba(0, 0, 255,.5); */
+        }
+        .effect2>a .top{
+            background:rgba(255, 50, 40, 1);
+            transform-origin:0 0; transform:rotateX(0deg) translate3d(0,0,0);
+        }
+        .effect2>a .front{
+            background:rgba(100, 100, 255, 0.5);
+            transform-origin:0 0; transform:rotateX(0deg) translate3d(0,0,100px);
+        }
+        .effect2>a .left{
+            background:rgba(215, 166, 255, .5);
+            transform-origin:0 0; transform:rotateY(0deg)  ttranslate3d(0,0,0);
+        }
+        .effect2>a .right{
+            background:rgba(134, 255, 221,.5);
+            transform-origin:0 0; transform:rotateY(0deg)  translate3d(0,0,0);
+        }
+        .effect2>a .back{
+            background:rgba(155, 255, 135, .5);
+            transform-origin:0 0; transform:rotateX(0deg) translate3d(0,0,-100px);
+        }
+        .effect2>a .bottom{
+            background:rgba(255, 248, 110, .5);
+            transform-origin:0 0;  transform:rotateX(0deg) translate3d(0,0,0);
+        }
+        .effect2>a>span>span{
+            font-size:16px;font-weight:400;text-transform:uppercase;
+            color:#333377;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="effect1">
+        <a href="#">quesadilla</a>
+        <a href="#">tortilla</a>
+        <a href="#">tacos</a>
+        <a href="#">guacamole</a>
+    </div>
+    <div class="effect2">
+        <a href="#">
+            <span class="top"><span>top</span></span>
+            <span class="front"><span>front</span></span>
+            <span class="left"><span>left</span></span>
+            <span class="right"><span>right</span></span>
+            <span class="back"><span>back</span></span>
+            <span class="bottom"><span>bottom</span></span>
+        </a>
+    </div>
+</body>
+</html>
