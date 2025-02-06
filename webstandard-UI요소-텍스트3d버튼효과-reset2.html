@@ -39,8 +39,8 @@
 
         /* ///////////////////////////////////////////////////////////////////////////////////   3 D  B O X  B U T T O N   //////////////////// */
         .effect2{
-            height:400px;padding:100px 0; /* a박스세로정렬 */
-            font-size:10px;
+            height:100vh;padding:200px 0; /* a박스세로정렬 */
+            font-size:16px; /* a박스 전체 사이즈 조절 */
             background:#f80;
             perspective:50em;
         }
@@ -48,10 +48,10 @@
         /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////    < a >    //////////////////// */
         .effect2 a{
             width:20em;height:20em;margin:0 auto;/* 박스 중앙정렬 */
-            position:relative;
+            position:relative; /* 각면 배치전 기준 */
 
             transform-style: preserve-3d;
-            transform-origin:10em 10em; /* a판 회전축 */
+            transform-origin:50% 50%; /* a판 회전축 */
             transform: rotateX(0deg) rotateY(0deg) translate3d(0px, 0px, 0);/* 고정 */
             transition:1s ease;
             /* background:blue;  *//* 회전축 표시 */
@@ -60,16 +60,18 @@
             transform: rotateX(360deg) /* rotateY(90deg) */ /* translate3d(0px, 0px, 0px); */
         }
         /* ////////////////////////////////////////////////////////////////////////////////////////////////////    <  s p a n  >    //////////////////// */
-        .effect2>a span{
-            width:20em;height:100%;
+        .effect2>a span{ /* 고정 */
+            width:100%;height:100%;
             position:absolute;left:0;top:0;
-
-            transform-origin:10em 10em;
+            
+            transform-origin:50% 50%; /* 각면 배치시 회전축 */
             /* border:1px solid rgba(0, 0, 255,.5); */
         }
         .effect2>a .top{
             background:rgba(255, 50, 40, .5);
-            transform:rotateX(90deg) translate3d(0,0,10em);
+            transform:rotateX(90deg) translate3d(0,0,10em); 
+            /* left top기준 (x,y,z) z:수직상방+ */
+            /* rotateX:앞구르기방향+, rotateY:시계반대방향+*/
         }
         .effect2>a .front{
             background:rgba(100, 100, 255, .5);
@@ -91,9 +93,11 @@
             background:rgba(255, 248, 110, .5);
             transform:rotateX(-90deg) translate3d(0,0,10em);
         }
-        .effect2>a>span>span{
-            font-size:2em;font-weight:400;text-transform:uppercase;
-            color:#333377;
+        .effect2>a>span>span{  
+            font-size:1em;font-weight:400;text-transform:uppercase;
+            text-align:center;line-height:20em;
+            color:#333377; 
+            /* 타이포 세로정렬시 font-size + line-height = .effect2 a{height value}  */
         }
         
     </style>
