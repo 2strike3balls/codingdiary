@@ -1,0 +1,8 @@
+@charset "utf-8";
+
+.wrap{width:400px; margin:0 auto; padding:100px 0;}
+.form-wrap{border:1px solid #aaa; border-radius:10px;}
+.form-wrap li{padding:10px;margin:10px; box-shadow:0 0 10px 2px #dddddd55; border-radius:10px; }
+.form-wrap input{width:100%; }
+.form-wrap textarea{width:100%; }
+
